@@ -29,8 +29,6 @@
 // isUnique("make") -> 
 // true
 
-import java.util.ArrayList;
-
 public class UniqueWordAbbreviation {
     HashMap<String, String> map;
 

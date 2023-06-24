@@ -1,4 +1,4 @@
-// Given a set of distinct integers, nums, return all possible subsets.
+package amazon;// Given a set of distinct integers, nums, return all possible subsets.
 
 // Note: The solution set must not contain duplicate subsets.
 
@@ -15,6 +15,10 @@
 //   [1,2],
 //   []
 // ]
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {

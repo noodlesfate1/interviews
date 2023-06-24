@@ -1,4 +1,4 @@
-// Given a binary tree, determine if it is a valid binary search tree (BST).
+package amazon;// Given a binary tree, determine if it is a valid binary search tree (BST).
 
 // Assume a BST is defined as follows:
 
@@ -15,6 +15,8 @@
 //    / \
 //   2   3
 // Binary tree [1,2,3], return false.
+
+import common.TreeNode;
 
 /**
  * Definition for a binary tree node.

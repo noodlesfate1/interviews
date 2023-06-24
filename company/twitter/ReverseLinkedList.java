@@ -1,4 +1,6 @@
-// Reverse a singly linked list.
+package twitter;// Reverse a singly linked list.
+
+import common.ListNode;
 
 /**
  * Definition for singly-linked list.

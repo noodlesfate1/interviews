@@ -1,4 +1,4 @@
-//Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+package amazon;//Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 //push(x) -- Push element x onto stack.
 //pop() -- Removes the element on top of the stack.
 //top() -- Get the top element.
@@ -13,7 +13,7 @@
  * int param_4 = obj.getMin();
  */
 class MinStack {
-    class Node {
+    static class Node {
         int data;
         int min;
         Node next;
