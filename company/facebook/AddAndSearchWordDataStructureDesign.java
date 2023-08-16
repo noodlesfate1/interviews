@@ -1,4 +1,4 @@
-// Design a data structure that supports the following two operations:
+package facebook;// Design a data structure that supports the following two operations:
 
 // void addWord(word)
 // bool search(word)
@@ -17,7 +17,7 @@
 // Note:
     // You may assume that all words are consist of lowercase letters a-z.
 
-public class AddAndSearchWordDataStructure {
+public class AddAndSearchWordDataStructureDesign {
     public class TrieNode {
         public TrieNode[] children = new TrieNode[26];
         public String item = "";
