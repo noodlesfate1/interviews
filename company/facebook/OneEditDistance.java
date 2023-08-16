@@ -1,5 +1,5 @@
 // Given two strings S and T, determine if they are both one edit distance apart.
-
+package facebook;
 public class OneEditDistance {
     public boolean isOneEditDistance(String s, String t) {
         //iterate through the length of the smaller string

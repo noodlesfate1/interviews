@@ -7,6 +7,9 @@
 
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
+package facebook;
+
+import java.util.HashMap;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {

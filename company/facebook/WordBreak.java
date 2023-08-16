@@ -5,6 +5,9 @@
 // dict = ["leet", "code"].
 
 // Return true because "leetcode" can be segmented as "leet code".
+package facebook;
+
+import java.util.Set;
 
 public class WordBreak {
     public boolean wordBreak(String s, Set<String> wordDict) {

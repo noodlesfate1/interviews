@@ -6,6 +6,10 @@
 // "105", 5 -> ["1*0+5","10-5"]
 // "00", 0 -> ["0+0", "0-0", "0*0"]
 // "3456237490", 9191 -> []
+package facebook;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ExpressionAddOperators {
     public List<String> addOperators(String num, int target) {

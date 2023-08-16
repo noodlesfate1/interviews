@@ -19,7 +19,7 @@
 //      |  1 0 0 |   | 7 0 0 |   |  7 0 0 |
 // AB = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
 //                   | 0 0 1 |
-
+package facebook;
 public class SparseMatrixMultiplication {
     public int[][] multiply(int[][] A, int[][] B) {
         int m = A.length;

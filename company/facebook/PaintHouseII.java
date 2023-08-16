@@ -7,7 +7,7 @@
 
 // Follow up:
 // Could you solve it in O(nk) runtime?
-
+package facebook;
 public class PaintHouseII { 
     public int minCostII(int[][] costs) {
         if(costs == null|| costs.length == 0) {

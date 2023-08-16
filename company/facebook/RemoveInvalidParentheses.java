@@ -6,6 +6,10 @@
 // "()())()" -> ["()()()", "(())()"]
 // "(a)())()" -> ["(a)()()", "(a())()"]
 // ")(" -> [""]
+package facebook;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class RemoveInvalidParentheses {
     public List<String> removeInvalidParentheses(String s) {

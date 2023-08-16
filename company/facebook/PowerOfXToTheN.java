@@ -1,5 +1,5 @@
 // Implement pow(x, n).
-
+package facebook;
 public class PowerOfXToTheN {
     public double myPow(double x, int n) {
         if(n == 0) {

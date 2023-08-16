@@ -19,34 +19,51 @@
 //     0 --- 2
 //          / \
 //          \_/
+package facebook;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Definition for undirected graph.
  * class UndirectedGraphNode {
- *     int label;
- *     List<UndirectedGraphNode> neighbors;
- *     UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
+ * int label;
+ * List<UndirectedGraphNode> neighbors;
+ * UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
  * };
  */
 public class CloneGraph {
     public HashMap<Integer, UndirectedGraphNode> map = new HashMap<Integer, UndirectedGraphNode>();
-    
+
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-        if(node == null) {
+        if (node == null) {
             return null;
         }
-        
-        if(map.containsKey(node.label)) {
+
+        if (map.containsKey(node.label)) {
             return map.get(node.label);
         }
-        
+
         UndirectedGraphNode newNode = new UndirectedGraphNode(node.label);
         map.put(newNode.label, newNode);
-        
-        for(UndirectedGraphNode neighbor : node.neighbors) {
+
+        for (UndirectedGraphNode neighbor : node.neighbors) {
             newNode.neighbors.add(cloneGraph(neighbor));
         }
-        
+
         return newNode;
     }
+
+    class UndirectedGraphNode {
+        int label;
+        List<UndirectedGraphNode> neighbors;
+
+        UndirectedGraphNode(int x) {
+            label = x;
+            neighbors = new ArrayList<UndirectedGraphNode>();
+        }
+    }
+
+    ;
 }

@@ -15,7 +15,7 @@
 // 00100
 // 00011
 // Answer: 3
-
+package facebook;
 public class NumberOfIslands {
     char[][] gridCopy;
     

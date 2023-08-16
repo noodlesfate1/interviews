@@ -13,6 +13,9 @@
 
 // Follow Up:
 // Can you do it in O(n) time?
+package facebook;
+
+import java.util.HashMap;
 
 public class MaximumSizeSubarraySumEqualsK {
     public int maxSubArrayLen(int[] nums, int k) {

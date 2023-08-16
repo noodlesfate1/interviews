@@ -7,6 +7,9 @@
 // Trie trie = new Trie();
 // trie.insert("somestring");
 // trie.search("key");
+package facebook;
+
+import java.util.HashMap;
 
 class TrieNode {
     HashMap<Character, TrieNode> map;
@@ -24,7 +27,7 @@ class TrieNode {
 public class ImplementTrie {
     private TrieNode root;
 
-    public Trie() {
+    public ImplementTrie() {
         root = new TrieNode(' ');
     }
 

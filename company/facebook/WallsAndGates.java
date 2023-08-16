@@ -15,7 +15,7 @@
 //   2   2   1  -1
 //   1  -1   2  -1
 //   0  -1   3   4
-
+package facebook;
 public class WallsAndGates {
     public void wallsAndGates(int[][] rooms) {
         //iterate through the matrix calling dfs on all indices that contain a zero

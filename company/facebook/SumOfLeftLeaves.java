@@ -19,6 +19,10 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+package facebook;
+
+import common.TreeNode;
+
 public class SumOfLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {
         if(root == null) {

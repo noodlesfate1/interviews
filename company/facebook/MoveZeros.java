@@ -5,7 +5,7 @@
 // Note:
     // You must do this in-place without making a copy of the array.
     // Minimize the total number of operations.
-
+package facebook;
 public class MoveZeros {
     public void moveZeroes(int[] nums) {
         if(nums == null || nums.length == 0) {

@@ -5,6 +5,10 @@
 // The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 
 // Your algorithm should run in O(n) complexity.
+package facebook;
+
+import java.util.HashSet;
+import java.util.Set;
 
 class LongestConsecutiveSequence {
     public int longestConsecutive(int[] nums) {

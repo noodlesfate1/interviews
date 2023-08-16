@@ -13,7 +13,7 @@
 // word = "ABCCED", -> returns true,
 // word = "SEE", -> returns true,
 // word = "ABCB", -> returns false.
-
+package facebook;
 public class WordSearch {
     public boolean exist(char[][] board, String word) {
         char[] w = word.toCharArray();
