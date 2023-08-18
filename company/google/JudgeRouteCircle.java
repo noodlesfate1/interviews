@@ -8,23 +8,24 @@
 //Example 2:
 //Input: "LL"
 //Output: false
+package google;
 
 class JudgeRouteCircle {
     public boolean judgeCircle(String moves) {
         int UD = 0;
         int LR = 0;
-        for(int i = 0; i < moves.length(); i++) {
-            if(moves.charAt(i) == 'U') {
+        for (int i = 0; i < moves.length(); i++) {
+            if (moves.charAt(i) == 'U') {
                 UD++;
-            } else if(moves.charAt(i) == 'D') {
+            } else if (moves.charAt(i) == 'D') {
                 UD--;
-            } else if(moves.charAt(i) == 'L') {
+            } else if (moves.charAt(i) == 'L') {
                 LR++;
-            } else if(moves.charAt(i) == 'R') {
+            } else if (moves.charAt(i) == 'R') {
                 LR--;
             }
         }
-        
+
         return UD == 0 && LR == 0;
     }
 }

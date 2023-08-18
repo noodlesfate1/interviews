@@ -4,6 +4,9 @@
 //Design the encode and decode methods for the TinyURL service. There is no restriction on how your 
 //encode/decode algorithm should work. You just need to ensure that a URL can be encoded to a tiny URL 
 //and the tiny URL can be decoded to the original URL.
+package google;
+
+import java.util.HashMap;
 
 public class EncodeAndDecodeTinyURL {
     HashMap<String, String> map = new HashMap<String, String>();
@@ -12,21 +15,21 @@ public class EncodeAndDecodeTinyURL {
 
     public String getKey() {
         String key = "";
-        while(count > 0) {
+        while (count > 0) {
             count--;
             key += characters.charAt(count);
             count /= characters.length();
         }
-        
+
         return key;
     }
-    
+
     // Encodes a URL to a shortened URL.
     public String encode(String longUrl) {
         String key = getKey();
         map.put(key, longUrl);
         count++;
-            
+
         return "http://tinyurl.com/" + key;
     }
 

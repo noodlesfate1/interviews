@@ -3,6 +3,7 @@
 // For example, Given s = “eceba” and k = 2,
 
 // T is "ece" which its length is 3.
+package google;
 
 public class LongestSubstringWithAtMostKDistinctCharacters {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
@@ -22,7 +23,7 @@ public class LongestSubstringWithAtMostKDistinctCharacters {
             while (num > k && i < s.length()) {     // sliding window
                 count[s.charAt(i)]--;
 
-                if (count[s.charAt(i)] == 0){ 
+                if (count[s.charAt(i)] == 0) {
                     num--;
                 }
 

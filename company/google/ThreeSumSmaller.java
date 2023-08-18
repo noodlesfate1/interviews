@@ -8,30 +8,33 @@
 // [-2, 0, 3]
 
 // Follow up:
-    // Could you solve it in O(n2) runtime?
+// Could you solve it in O(n2) runtime?
+package google;
 
-public class 3SumSmaller {
+import java.util.Arrays;
+
+public class ThreeSumSmaller {
     public int threeSumSmaller(int[] nums, int target) {
         //initialize total count to zero
         int count = 0;
-        
+
         //sort the array
         Arrays.sort(nums);
-        
+
         //loop through entire array
-        for(int i = 0; i < nums.length - 2; i++) {
+        for (int i = 0; i < nums.length - 2; i++) {
             //set left to i + 1
             int left = i + 1;
             //set right to end of array
             int right = nums.length - 1;
-            
+
             //while left index < right index
-            while(left < right) {
+            while (left < right) {
                 //if the 3 indices add to less than the target increment count
-                if(nums[i] + nums[left] + nums[right] < target) {
+                if (nums[i] + nums[left] + nums[right] < target) {
                     //increment the count by the distance between left and right because the array is sorted
                     count += right - left;
-                    
+
                     //increment left pointer
                     left++;
                 } else {
@@ -41,7 +44,7 @@ public class 3SumSmaller {
                 }
             }
         }
-        
+
         return count;
     }
 }

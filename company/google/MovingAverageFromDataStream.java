@@ -6,6 +6,10 @@
 // m.next(10) = (1 + 10) / 2
 // m.next(3) = (1 + 10 + 3) / 3
 // m.next(5) = (10 + 3 + 5) / 3
+package google;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Your MovingAverage object will be instantiated and called as such:
@@ -18,17 +22,19 @@ public class MovingAverageFromDataStream {
     int maxSize;
     Queue<Integer> window;
 
-    /** Initialize your data structure here. */
-    public MovingAverage(int size) {
+    /**
+     * Initialize your data structure here.
+     */
+    public MovingAverageFromDataStream(int size) {
         this.maxSize = size;
         window = new LinkedList<Integer>();
     }
-    
+
     public double next(int val) {
-        if(window.size() == maxSize) {
+        if (window.size() == maxSize) {
             previousSum -= window.remove();
         }
-        
+
         window.add(val);
         previousSum += val;
 

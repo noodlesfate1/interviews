@@ -30,31 +30,32 @@
 // The first 3 bits are all one's and the 4th bit is 0 means it is a 3-bytes character.
 // The next byte is a continuation byte which starts with 10 and that's correct.
 // But the second continuation byte does not start with 10, so it is invalid.
+package google;
 
 public class Utf8Validation {
     public boolean validUtf8(int[] data) {
         int count = 0;
 
-        for(int i : data) {
-            if(count == 0) {
-                if((i >> 5) == 0b110) {
+        for (int i : data) {
+            if (count == 0) {
+                if ((i >> 5) == 0b110) {
                     count = 1;
-                } else if((i >> 4) == 0b1110) {
+                } else if ((i >> 4) == 0b1110) {
                     count = 2;
-                } else if((i >> 3) == 0b11110) {
+                } else if ((i >> 3) == 0b11110) {
                     count = 3;
-                } else if((i >> 7) == 0b1) {
+                } else if ((i >> 7) == 0b1) {
                     return false;
                 }
             } else {
-                if((i >> 6) != 0b10) {
+                if ((i >> 6) != 0b10) {
                     return false;
                 }
 
                 count--;
             }
         }
-        
+
         return count == 0;
     }
 }

@@ -8,17 +8,18 @@
 //  [1,1,0,0]]
 
 // Answer: 16
+package google;
 
 class IslandPerimeter {
     public int islandPerimeter(int[][] grid) {
         int perimeter = 0;
-        if(grid == null || grid.length == 0) {
+        if (grid == null || grid.length == 0) {
             return perimeter;
         }
 
-        for(int i = 0; i < grid.length; i++) {
-            for(int j = 0; j < grid[i].length; j++) {
-                if(grid[i][j] == 1) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 1) {
                     perimeter += numNeighbors(grid, i, j);
                     return perimeter;
                 }
@@ -29,18 +30,18 @@ class IslandPerimeter {
     }
 
     public int numNeighbors(int[][] grid, int x, int y) {
-        if(x < 0 || x >= grid.length || y < 0 || y >= grid[x].length || grid[x][y] == 0) {
+        if (x < 0 || x >= grid.length || y < 0 || y >= grid[x].length || grid[x][y] == 0) {
             return 1;
         }
 
-        if(grid[x][y] == -1) {
+        if (grid[x][y] == -1) {
             return 0;
         }
 
         grid[x][y] = -1;
-        return numNeighbors(grid, x + 1, y) + 
-            numNeighbors(grid, x - 1, y) + 
-            numNeighbors(grid, x, y + 1) + 
-            numNeighbors(grid, x, y - 1);
+        return numNeighbors(grid, x + 1, y) +
+                numNeighbors(grid, x - 1, y) +
+                numNeighbors(grid, x, y + 1) +
+                numNeighbors(grid, x, y - 1);
     }
 }

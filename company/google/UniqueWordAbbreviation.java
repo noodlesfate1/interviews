@@ -28,18 +28,21 @@
 
 // isUnique("make") -> 
 // true
+package google;
+
+import java.util.HashMap;
 
 public class UniqueWordAbbreviation {
     HashMap<String, String> map;
 
-    public ValidWordAbbr(String[] dictionary) {
+    public UniqueWordAbbreviation(String[] dictionary) {
         this.map = new HashMap<String, String>();
-        
-        for(String word : dictionary) {
+
+        for (String word : dictionary) {
             String key = getKey(word);
-            
-            if(map.containsKey(key)) {
-                if(!map.get(key).equals(word)) {
+
+            if (map.containsKey(key)) {
+                if (!map.get(key).equals(word)) {
                     map.put(key, "");
                 }
             } else {
@@ -49,14 +52,14 @@ public class UniqueWordAbbreviation {
     }
 
     public boolean isUnique(String word) {
-        return !map.containsKey(getKey(word))||map.get(getKey(word)).equals(word);
+        return !map.containsKey(getKey(word)) || map.get(getKey(word)).equals(word);
     }
-    
+
     public String getKey(String word) {
-        if(word.length() <= 2) {
+        if (word.length() <= 2) {
             return word;
         }
-        
+
         return word.charAt(0) + Integer.toString(word.length() - 2) + word.charAt(word.length() - 1);
     }
 }
