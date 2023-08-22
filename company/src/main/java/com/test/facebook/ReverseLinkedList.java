@@ -1,6 +1,6 @@
 package com.test.facebook;// Reverse a singly linked list.
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 /**
  * Definition for singly-linked list.

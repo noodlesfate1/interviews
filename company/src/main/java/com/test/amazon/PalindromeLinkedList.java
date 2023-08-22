@@ -1,6 +1,6 @@
 package com.test.amazon;
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 import java.util.Stack;
 

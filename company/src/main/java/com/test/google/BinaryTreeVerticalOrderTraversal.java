@@ -56,7 +56,7 @@
 // ]
 package com.test.google;
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 import java.util.*;
 

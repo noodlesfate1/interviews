@@ -1,6 +1,6 @@
 package com.test.facebook;
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 import java.util.Stack;
 

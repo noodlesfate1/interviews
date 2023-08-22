@@ -1,6 +1,6 @@
 package com.test.airbnb;// Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 /**
  * Definition for a binary tree node.

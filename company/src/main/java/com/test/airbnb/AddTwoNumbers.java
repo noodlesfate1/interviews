@@ -6,7 +6,7 @@ package com.test.airbnb;// You are given two non-empty linked lists representing
 // Output: 7 -> 0 -> 8
 
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

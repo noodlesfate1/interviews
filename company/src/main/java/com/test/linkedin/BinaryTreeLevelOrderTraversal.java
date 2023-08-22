@@ -14,7 +14,7 @@ package com.test.linkedin;// Given a binary tree, return the level order travers
 //   [15,7]
 // ]
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

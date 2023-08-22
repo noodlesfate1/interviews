@@ -12,7 +12,7 @@
 // ["1->2->5", "1->3"]
 package com.test.google;
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

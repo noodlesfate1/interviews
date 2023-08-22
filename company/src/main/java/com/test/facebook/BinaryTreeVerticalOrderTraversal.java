@@ -56,7 +56,7 @@
 // ]
 package com.test.facebook;
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 import java.util.*;
 

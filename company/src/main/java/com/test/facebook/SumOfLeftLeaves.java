@@ -21,7 +21,7 @@
  */
 package com.test.facebook;
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 public class SumOfLeftLeaves {
     public int sumOfLeftLeaves(TreeNode root) {

@@ -4,7 +4,7 @@ package com.test.google;// Implement an iterator over a binary search tree (BST)
 
 // Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 import java.util.Stack;
 

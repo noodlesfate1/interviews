@@ -5,7 +5,7 @@
 // You are guaranteed to have only one unique value in the BST that is closest to the target.
 package com.test.google;
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 /**
  * Definition for a binary tree node.

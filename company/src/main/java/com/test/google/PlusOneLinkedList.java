@@ -12,7 +12,7 @@
 // 1->2->4
 package com.test.google;
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 /**
  * Definition for singly-linked list.

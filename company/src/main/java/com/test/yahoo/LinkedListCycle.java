@@ -3,7 +3,7 @@
 //Can you solve it without using extra space?
 package com.test.yahoo;
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 /**
  * Definition for singly-linked list.

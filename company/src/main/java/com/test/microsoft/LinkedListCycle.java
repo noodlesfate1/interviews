@@ -14,7 +14,7 @@
  */
 package com.test.microsoft;
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {

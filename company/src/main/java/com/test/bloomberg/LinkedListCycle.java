@@ -2,7 +2,7 @@ package com.test.bloomberg;//Given a linked list, determine if it has a cycle in
 //Follow up:
 //Can you solve it without using extra space?
 
-import common.ListNode;
+import com.test.common.ListNode;
 
 /**
  * Definition for singly-linked list.

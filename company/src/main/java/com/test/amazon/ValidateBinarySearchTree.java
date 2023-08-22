@@ -16,7 +16,7 @@ package com.test.amazon;// Given a binary tree, determine if it is a valid binar
 //   2   3
 // Binary tree [1,2,3], return false.
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 /**
  * Definition for a binary tree node.

@@ -15,7 +15,7 @@
 //    3    3
 package com.test.linkedin;
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 /**
  * Definition for a binary tree node.

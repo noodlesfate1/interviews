@@ -3,7 +3,7 @@
 // Note: If the given node has no in-order successor in the tree, return null.
 package com.test.facebook;
 
-import common.TreeNode;
+import com.test.common.TreeNode;
 
 /**
  * Definition for a binary tree node.
