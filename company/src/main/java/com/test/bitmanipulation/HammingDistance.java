@@ -17,6 +17,7 @@
 //        ↑   ↑
 
 // The above arrows point to positions where the corresponding bits are different.
+package com.test.bitmanipulation;
 
 public class HammingDistance {
     public int hammingDistance(int x, int y) {

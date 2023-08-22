@@ -4,6 +4,13 @@ package com.test.array;// Given a collection of intervals, merge all overlapping
 // Given [1,3],[2,6],[8,10],[15,18],
 // return [1,6],[8,10],[15,18].
 
+import com.test.common.Interval;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 /**
  * Definition for an interval.
  * public class Interval {

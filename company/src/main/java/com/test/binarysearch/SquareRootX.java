@@ -1,28 +1,29 @@
 // Implement int sqrt(int x).
 
 // Compute and return the square root of x.
+package com.test.binarysearch;
 
-public class Solution {
+public class SquareRootX {
     public int mySqrt(int x) {
-        if(x == 0) {
+        if (x == 0) {
             return 0;
         }
-        
+
         int left = 1;
         int right = x;
-        
-        while(left <= right) {
+
+        while (left <= right) {
             int mid = left + (right - left) / 2;
-            
-            if(mid == x / mid) {
+
+            if (mid == x / mid) {
                 return mid;
-            } else if(mid > x / mid) {
+            } else if (mid > x / mid) {
                 right = mid - 1;
-            } else if(mid < x / mid) {
+            } else if (mid < x / mid) {
                 left = mid + 1;
             }
         }
-        
+
         return right;
     }
 }

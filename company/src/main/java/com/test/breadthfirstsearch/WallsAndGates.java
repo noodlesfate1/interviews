@@ -1,4 +1,4 @@
-// You are given a m x n 2D grid initialized with these three possible values.
+package com.test.breadthfirstsearch;// You are given a m x n 2D grid initialized with these three possible values.
 
 // -1 - A wall or an obstacle.
 // 0 - A gate.
@@ -16,28 +16,28 @@
 //   1  -1   2  -1
 //   0  -1   3   4
 
-public class Solution {
+public class WallsAndGates {
     public void wallsAndGates(int[][] rooms) {
         //iterate through the matrix calling dfs on all indices that contain a zero
-        for(int i = 0; i < rooms.length; i++) {
-            for(int j = 0; j < rooms[0].length; j++) {
-                if(rooms[i][j] == 0) {
+        for (int i = 0; i < rooms.length; i++) {
+            for (int j = 0; j < rooms[0].length; j++) {
+                if (rooms[i][j] == 0) {
                     dfs(rooms, i, j, 0);
                 }
             }
         }
     }
-    
+
     void dfs(int[][] rooms, int i, int j, int distance) {
         //if you have gone out of the bounds of the array or you have run into a wall/obstacle, return
         // room[i][j] < distance also ensure that we do not overwrite any previously determined distance if it is shorter than our current distance
-        if(i < 0 || i >= rooms.length || j < 0 || j >= rooms[0].length || rooms[i][j] < distance) {
+        if (i < 0 || i >= rooms.length || j < 0 || j >= rooms[0].length || rooms[i][j] < distance) {
             return;
         }
-        
+
         //set current index's distance to distance
         rooms[i][j] = distance;
-        
+
         //recurse on all adjacent neighbors of rooms[i][j]
         dfs(rooms, i + 1, j, distance + 1);
         dfs(rooms, i - 1, j, distance + 1);

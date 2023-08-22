@@ -15,10 +15,10 @@ package com.test.array;//Given a non-empty array of digits representing a non-ne
 //Output: [4,3,2,2]
 //Explanation: The array represents the integer 4321.
 
-class Solution {
+class PlusOne {
     public int[] plusOne(int[] digits) {
-        for(int i = digits.length - 1; i >= 0; i--) {
-            if(digits[i] < 9) {
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
                 digits[i]++;
                 return digits;
             }

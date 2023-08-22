@@ -12,14 +12,15 @@
 //
 //Input: 218
 //Output: false
+package com.test.bitmanipulation;
 
 class PowerOfTwo {
     public boolean isPowerOfTwo(int n) {
         long i = 1;
-        while(i < n) {
+        while (i < n) {
             i <<= 1;
         }
-        
+
         return i == n;
     }
 }

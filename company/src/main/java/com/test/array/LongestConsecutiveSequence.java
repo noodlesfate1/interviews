@@ -6,6 +6,9 @@ package com.test.array;// Given an unsorted array of integers, find the length o
 
 // Your algorithm should run in O(n) complexity.
 
+import java.util.HashSet;
+import java.util.Set;
+
 class LongestConsecutiveSequence {
     public int longestConsecutive(int[] nums) {
         if(nums == null || nums.length == 0) {
