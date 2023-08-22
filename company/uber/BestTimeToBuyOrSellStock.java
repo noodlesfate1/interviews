@@ -12,25 +12,26 @@
 // Output: 0
 
 // In this case, no transaction is done, i.e. max profit = 0.
+package uber;
 
-public class BestTimeToBuyAndSellStock {
+public class BestTimeToBuyOrSellStock {
     public int maxProfit(int[] prices) {
         //Kadane's algorithm
-        if(prices.length == 0) {
+        if (prices.length == 0) {
             return 0;
         }
-        
+
         int max = 0;
         int min = prices[0];
-        
-        for(int i = 1; i < prices.length; i++) {
-            if(prices[i] > min) {
+
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] > min) {
                 max = Math.max(max, prices[i] - min);
             } else {
                 min = prices[i];
             }
         }
-        
+
         return max;
     }
 }

@@ -12,24 +12,26 @@
 //Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 //Note:
 //The input string length won't exceed 1000.
+package linkedin;
 
 class PalindromicSubstrings {
     int result = 0;
+
     public int countSubstrings(String s) {
-        if(s == null || s.length() == 0) {
+        if (s == null || s.length() == 0) {
             return 0;
         }
-        
-        for(int i = 0; i < s.length(); i++) {
+
+        for (int i = 0; i < s.length(); i++) {
             extendPalindrome(s, i, i);
             extendPalindrome(s, i, i + 1);
         }
-        
+
         return result;
     }
-    
+
     public void extendPalindrome(String s, int left, int right) {
-        while(left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+        while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
             result++;
             left--;
             right++;

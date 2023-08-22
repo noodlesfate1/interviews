@@ -5,18 +5,19 @@
 
 //Follow up:
 //Could you do it without any loop/recursion in O(1) runtime?
+package microsoft;
 
 class AddDigits {
     public int addDigits(int num) {
-        while(num >= 10) {
+        while (num >= 10) {
             int temp = 0;
-            while(num > 0) {
+            while (num > 0) {
                 temp += num % 10;
                 num /= 10;
             }
             num = temp;
         }
-        
+
         return num;
     }
 }
