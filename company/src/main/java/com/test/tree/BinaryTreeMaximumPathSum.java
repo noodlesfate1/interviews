@@ -10,6 +10,8 @@ package com.test.tree;// Given a binary tree, find the maximum path sum.
 //      2   3
 // Return 6.
 
+import com.test.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

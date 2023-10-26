@@ -4,6 +4,11 @@ package com.test.sort;// Given an array of meeting time intervals consisting of 
 // Given [[0, 30],[5, 10],[15, 20]],
 // return false.
 
+import com.test.common.Interval;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
 /**
  * Definition for an interval.
  * public class Interval {

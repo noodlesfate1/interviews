@@ -8,6 +8,8 @@ package com.test.trie;// Implement a trie with insert, search, and startsWith me
 // trie.insert("somestring");
 // trie.search("key");
 
+import java.util.HashMap;
+
 class TrieNode {
 
     HashMap<Character, TrieNode> map;
@@ -28,7 +30,7 @@ class TrieNode {
 public class ImplementTrie {
     private TrieNode root;
 
-    public Trie() {
+    public ImplementTrie() {
         root = new TrieNode(' ');
     }
 

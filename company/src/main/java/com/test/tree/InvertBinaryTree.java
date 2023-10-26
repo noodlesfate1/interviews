@@ -14,6 +14,8 @@ package com.test.tree;// Invert a binary tree.
 //  / \   / \
 // 9   6 3   1
 
+import com.test.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

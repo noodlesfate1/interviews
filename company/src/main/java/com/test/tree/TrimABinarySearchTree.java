@@ -2,6 +2,8 @@ package com.test.tree;//Given a binary search tree and the lowest and highest bo
 //tree so that all its elements lies in [L, R] (R >= L). You might need to change the root 
 //of the tree, so the result should return the new root of the trimmed binary search tree.
 
+import com.test.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

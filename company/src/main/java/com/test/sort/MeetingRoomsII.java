@@ -4,6 +4,10 @@ package com.test.sort;// Given an array of meeting time intervals consisting of 
 // Given [[0, 30],[5, 10],[15, 20]],
 // return 2.
 
+import com.test.common.Interval;
+
+import java.util.Arrays;
+
 /**
  * Definition for an interval.
  * public class Interval {

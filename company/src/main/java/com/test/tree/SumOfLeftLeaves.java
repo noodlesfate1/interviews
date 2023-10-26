@@ -10,6 +10,8 @@ package com.test.tree;// Find the sum of all left leaves in a given binary tree.
 
 // There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
 
+import com.test.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

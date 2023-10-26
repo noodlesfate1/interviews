@@ -16,6 +16,8 @@ package com.test.tree;// Given a binary tree, determine if it is a valid binary 
 //   2   3
 // Binary tree [1,2,3], return false.
 
+import com.test.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

@@ -4,6 +4,10 @@ package com.test.stack;// Implement an iterator over a binary search tree (BST).
 
 // Note: next() and hasNext() should run in average O(1) time and uses O(h) memory, where h is the height of the tree.
 
+import com.test.common.TreeNode;
+
+import java.util.Stack;
+
 /**
  * Definition for binary tree
  * public class TreeNode {
@@ -17,7 +21,7 @@ package com.test.stack;// Implement an iterator over a binary search tree (BST).
 public class BinarySearchTreeIterator {
     Stack<TreeNode> stack;
 
-    public BSTIterator(TreeNode root) {
+    public BinarySearchTreeIterator(TreeNode root) {
         stack = new Stack<TreeNode>();
         
         while(root != null) {

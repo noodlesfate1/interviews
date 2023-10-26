@@ -17,7 +17,7 @@
 // isMatch("ab", ".*") → true
 // isMatch("aab", "c*a*b") → true
 
-public class RegularExpressionMatching {
+public class com.test.dynamic.programming.RegularExpressionMatching {
     public boolean isMatch(String s, String p) {
         if(s == null || p == null) {
             return false;

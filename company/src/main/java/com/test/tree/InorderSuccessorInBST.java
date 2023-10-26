@@ -2,6 +2,8 @@ package com.test.tree;// Given a binary search tree and a node in it, find the i
 
 // Note: If the given node has no in-order successor in the tree, return null.
 
+import com.test.common.TreeNode;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
